@@ -86,7 +86,7 @@ function post_to_url(path, params, method) {
 
 // function contact send request to our application
 function sendContactRequest() {
-    post_to_url('https://desolate-tundra-24206.herokuapp.com/add/contact',
+    post_to_url('https://localhost:5000/add/contact',
         {
             'email': document.getElementById('email').value,
             'name': document.getElementById('name').value,
@@ -97,7 +97,7 @@ function sendContactRequest() {
 
 // function page send request to our application
 function sendPageRequest() {
-    post_to_url('https://desolate-tundra-24206.herokuapp.com/add/page',
+    post_to_url('https://localhost:5000/add/contact',
         {
             'contact_id': sessionStorage.getItem('contact_id'),
             'url': sessionStorage.getItem('urls'),
