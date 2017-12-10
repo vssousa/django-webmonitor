@@ -1,0 +1,24 @@
+{% extends 'monitoring_board/base.html' %}
+{% load staticfiles %}
+
+{% block table_title %}
+    Web Pages of the Contact {{ contact_id }}
+{% endblock %}
+
+{% block table_columns %}
+    <th width="130px">Page ID</th>
+    <th>URL</th>
+    <th>Date</th>
+{% endblock %}
+
+{% block table_content %}
+    {% for page in page_list %}
+        <tr>
+            <td>{{ page.id }}</td>
+            <td><a href="{{ page.url }}" target="_blank">{{ page.url }}</a></td>
+            <td>{{ page.date }}</td>
+        </tr>
+    {% endfor %}
+{% endblock %}
+
+

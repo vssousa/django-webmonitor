@@ -1,0 +1,25 @@
+{% extends 'monitoring_board/base.html' %}
+{% load staticfiles %}
+
+{% block table_title %}
+    Contacts
+{% endblock %}
+
+{% block table_columns %}
+    <th width="130px">Contact ID</th>
+    <th>Name</th>
+    <th>E-mail</th>
+{% endblock %}
+
+
+{% block table_content %}
+    {% for contact in contact_list %}
+        <tr>
+            <td><a href="{% url 'monitoring_board:pages' contact.id %}">{{ contact.id }}</a></td>
+            <td>{{ contact.name }}</td>
+            <td>{{ contact.email }}</td>
+        </tr>
+    {% endfor %}
+{% endblock %}
+
+
