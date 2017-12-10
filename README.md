@@ -32,7 +32,7 @@ We basically have two projects, one for monitoring webpage accesses, named as `w
 ```
 cd $ROOT_DIRECTORY
 cd web_monitor
-python manage.py runserver 9000 &
+python manage.py runserver 5000 &
 cd ../app
 python manage.py runserver &
 ```
@@ -55,7 +55,7 @@ http://$HOSTNAME:$PORT/
 http://$HOSTNAME:$PORT/pages/<contact_id>
 ```
 
-P.S.: $HOSTNAME should be replaced by the hostname or IP address, **e.g.**, localhost; and $PORT should be replaced by the configured port in Django project, **e.g.**, 9000.
+P.S.: $HOSTNAME should be replaced by the hostname or IP address, **e.g.**, localhost; and $PORT should be replaced by the configured port in Django project, **e.g.**, 5000.
 
 ### External application (app)
 

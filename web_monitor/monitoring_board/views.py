@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 from django.shortcuts import get_object_or_404, render, redirect
 from django.http import HttpResponse
-from forms import ContactForm, PageForm
+from .forms import ContactForm, PageForm
 from django.views.decorators.csrf import csrf_exempt
 
 from .models import Contact, Page
