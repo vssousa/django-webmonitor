@@ -15,4 +15,4 @@ whitenoise==3.2
 wrapt==1.10.11
 dj-database-url==0.4.1
 gunicorn==19.6.0
-Django==1.11.1
+Django==1.11.7
