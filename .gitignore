@@ -6,3 +6,5 @@ web_monitor/\.idea/
 \.idea/
 
 env/
+
+*.pyc
